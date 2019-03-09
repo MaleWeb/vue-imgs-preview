@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/badge/npm-v0.1.6-brightgreen.svg)](https://www.npmjs.com/package/vue-imgs-preview)
+[![npm](https://img.shields.io/badge/npm-0.1.9-brightgreen.svg)](https://www.npmjs.com/package/vue-imgs-preview)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)  
 `花了一天的时间,抽离了一个业务中的组件。写的不好,请多指教`  
 # Vue-imgs-preview 0.x   
@@ -44,7 +44,7 @@ import VueImgsPreview from 'vue-imgs-preview'
 |参数  | 说明 | 类型 | 默认值 |
 |---|---|---|---|
 |imgPre | 组件的显示状态| Boolean | false|
-|articleId | 文章Dom的ID | String | null | 
+|articleId | 文章Dom的ID | String | null |
 
 ## About  
 
