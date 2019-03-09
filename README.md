@@ -16,7 +16,7 @@
 
 ## 预览  
 
-![](https://uufe-web.oss-cn-beijing.aliyuncs.com/PicLib/test/vue-img-preview_1552041613508.gif)  
+![](https://github.com/MaleWeb/vue-imgs-preview/blob/master/src/assets/vue-imgs-preview.gif)  
 
 ## 功能  
 
