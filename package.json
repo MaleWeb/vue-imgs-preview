@@ -1,6 +1,6 @@
 {
   "name": "vue-imgs-preview",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "图片查看工具,支持放大、下载、旋转、拖拽等",
   "author": "MaleWeb",
   "main": "dist/vueImgsPreview.common.js",
