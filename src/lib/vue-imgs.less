@@ -1,0 +1,233 @@
+.vue-imgs-preview {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .img-box {
+      cursor: move;
+      position: absolute;
+      z-index: 10005;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    ul.tools {
+      text-align: center;
+      position: fixed;
+      bottom: 20px;
+      padding: 0 5px;
+      left: 50%;
+      margin-left: -163px;
+      z-index: 10006;
+      height: 56px;
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+      border: solid 1px #f2f2f2;
+      min-width: 326px;
+      li {
+        cursor: default;
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+        position: relative;
+        height: 24px;
+        vertical-align: baseline;
+        moz-user-select: -moz-none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:hover {
+          .icon-plus {
+            display: none;
+          }
+          .icon-plus-on {
+            display: inline-block;
+          }
+          .icon-minus {
+            display: none;
+          }
+          .icon-minus-on {
+            display: inline-block;
+          }
+        }
+        i {
+          display: inline-block;
+          background-size: 100% 100%;
+          width: 26px;
+          height: 26px;
+        }
+        .image-index {
+          top: -4px;
+          position: relative;
+          font-size: 16px;
+          color: #676767;
+        }
+        .separate-line {
+          position: relative;
+          top: 6px;
+          display: inline-block;
+          margin-left: 22px;
+          cursor: default;
+          width: 1px;
+          height: 30px;
+          background: #e7e7e7;
+        }
+        .icon-plus {
+          background: url(../assets/imgPre-plus.svg) no-repeat;
+          background-size: 100% 100%;
+          width: 26px;
+          height: 26px;
+        }
+        .icon-plus-on {
+          display: none;
+          width: 26px;
+          height: 26px;
+          background: url(../assets/imgPre-plus-on.svg) no-repeat;
+          background-size: 100% 100%;
+        }
+        .icon-minus {
+          background: url(../assets/imgPre-minus.svg) no-repeat;
+          background-size: 100% 100%;
+          width: 26px;
+          height: 26px;
+        }
+        .icon-minus-on {
+          display: none;
+          width: 26px;
+          height: 26px;
+          background: url(../assets/imgPre-minus-on.svg) no-repeat;
+          background-size: 100% 100%;
+        }
+        .icon-turn-left {
+          background: url(../assets/icon.svg) no-repeat;
+          background-position: 65.22988505747126% 54.98489425981873%;
+          width: 29px;
+          height: 26px;
+          &:hover {
+            background-position: 0 66.76737160120845%;
+          }
+        }
+        .icon-preview-dl {
+          background: url(../assets/icon.svg) no-repeat;
+          background-position: 74.35897435897436% 39.879154078549846%;
+          width: 26px;
+          height: 26px;
+          &:hover {
+            background-position: 74.35897435897436% 8.459214501510575%;
+          }
+        }
+        .icon-preview-fit-size {
+          background: url(../assets/icon.svg) no-repeat;
+          background-position: 74.35897435897436% 16.31419939577039%;
+          width: 26px;
+          height: 26px;
+          &:hover {
+            background-position: 74.35897435897436% 47.73413897280967%;
+          }
+        }
+      }
+    }
+    .info {
+      color: white;
+      position: fixed;
+      top: 0;
+      line-height: 40px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 10006;
+      .image-buttons {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        border-radius: 50%;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px #efefef;
+        width: 44px;
+        height: 44px;
+        background: #fff;
+        cursor: pointer;
+        .close {
+          width: 44px;
+          margin-top: 12px;
+          .icon {
+            text-align: center;
+            background: url(../assets/imgPre-close1.svg) no-repeat;
+            background-size: 100% 100%;
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin: 0 auto;
+            //   margin-left: 11px;
+          }
+        }
+      }
+    }
+    .bi-zoom-prev,
+    .bi-zoom-next {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      display: block;
+      top: 50%;
+      margin-top: -24px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+      border: solid 1px #f2f2f2;
+      z-index: 11000;
+      text-align: center;
+      line-height: 48px;
+      cursor: pointer;
+      .icon-turn-next {
+        background-image: url("../assets/imgPre-right.svg");
+        background-size: 100% 100%;
+      }
+      .icon-turn-prev {
+        margin-top: -5px;
+        background-image: url("../assets/imgPre-right.svg");
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+      }
+      i {
+        width: 30px;
+        height: 48px;
+        line-height: 48px;
+        margin: 0 auto;
+        font-size: 26px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        font-style: normal;
+        vertical-align: baseline;
+        text-align: center;
+        text-transform: none;
+        text-rendering: auto;
+      }
+    }
+    .bi-zoom-next {
+      right: 0;
+    }
+    .bi-zoom-prev {
+      left: 0;
+    }
+  }

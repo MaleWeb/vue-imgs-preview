@@ -1,0 +1,233 @@
+.vue-imgs-preview {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.vue-imgs-preview .img-box {
+  cursor: move;
+  position: absolute;
+  z-index: 10005;
+}
+.vue-imgs-preview .img-box img {
+  width: 100%;
+  height: 100%;
+}
+.vue-imgs-preview ul.tools {
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  padding: 0 5px;
+  left: 50%;
+  margin-left: -163px;
+  z-index: 10006;
+  height: 56px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #f2f2f2;
+  min-width: 326px;
+}
+.vue-imgs-preview ul.tools li {
+  cursor: default;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  height: 24px;
+  vertical-align: baseline;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.vue-imgs-preview ul.tools li:hover .icon-plus {
+  display: none;
+}
+.vue-imgs-preview ul.tools li:hover .icon-plus-on {
+  display: inline-block;
+}
+.vue-imgs-preview ul.tools li:hover .icon-minus {
+  display: none;
+}
+.vue-imgs-preview ul.tools li:hover .icon-minus-on {
+  display: inline-block;
+}
+.vue-imgs-preview ul.tools li i {
+  display: inline-block;
+  background-size: 100% 100%;
+  width: 26px;
+  height: 26px;
+}
+.vue-imgs-preview ul.tools li .image-index {
+  top: -4px;
+  position: relative;
+  font-size: 16px;
+  color: #676767;
+}
+.vue-imgs-preview ul.tools li .separate-line {
+  position: relative;
+  top: 6px;
+  display: inline-block;
+  margin-left: 22px;
+  cursor: default;
+  width: 1px;
+  height: 30px;
+  background: #e7e7e7;
+}
+.vue-imgs-preview ul.tools li .icon-plus {
+  background: url(../assets/imgPre-plus.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 26px;
+  height: 26px;
+}
+.vue-imgs-preview ul.tools li .icon-plus-on {
+  display: none;
+  width: 26px;
+  height: 26px;
+  background: url(../assets/imgPre-plus-on.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.vue-imgs-preview ul.tools li .icon-minus {
+  background: url(../assets/imgPre-minus.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 26px;
+  height: 26px;
+}
+.vue-imgs-preview ul.tools li .icon-minus-on {
+  display: none;
+  width: 26px;
+  height: 26px;
+  background: url(../assets/imgPre-minus-on.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.vue-imgs-preview ul.tools li .icon-turn-left {
+  background: url(../assets/icon.svg) no-repeat;
+  background-position: 65.22988505747126% 54.98489425981873%;
+  width: 29px;
+  height: 26px;
+}
+.vue-imgs-preview ul.tools li .icon-turn-left:hover {
+  background-position: 0 66.76737160120845%;
+}
+.vue-imgs-preview ul.tools li .icon-preview-dl {
+  background: url(../assets/icon.svg) no-repeat;
+  background-position: 74.35897435897436% 39.879154078549846%;
+  width: 26px;
+  height: 26px;
+}
+.vue-imgs-preview ul.tools li .icon-preview-dl:hover {
+  background-position: 74.35897435897436% 8.459214501510575%;
+}
+.vue-imgs-preview ul.tools li .icon-preview-fit-size {
+  background: url(../assets/icon.svg) no-repeat;
+  background-position: 74.35897435897436% 16.31419939577039%;
+  width: 26px;
+  height: 26px;
+}
+.vue-imgs-preview ul.tools li .icon-preview-fit-size:hover {
+  background-position: 74.35897435897436% 47.73413897280967%;
+}
+.vue-imgs-preview .info {
+  color: white;
+  position: fixed;
+  top: 0;
+  line-height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10006;
+}
+.vue-imgs-preview .info .image-buttons {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #efefef;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  cursor: pointer;
+}
+.vue-imgs-preview .info .image-buttons .close {
+  width: 44px;
+  margin-top: 12px;
+}
+.vue-imgs-preview .info .image-buttons .close .icon {
+  text-align: center;
+  background: url(../assets/imgPre-close1.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.vue-imgs-preview .bi-zoom-prev,
+.vue-imgs-preview .bi-zoom-next {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  display: block;
+  top: 50%;
+  margin-top: -24px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #f2f2f2;
+  z-index: 11000;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+}
+.vue-imgs-preview .bi-zoom-prev .icon-turn-next,
+.vue-imgs-preview .bi-zoom-next .icon-turn-next {
+  background-image: url("../assets/imgPre-right.svg");
+  background-size: 100% 100%;
+}
+.vue-imgs-preview .bi-zoom-prev .icon-turn-prev,
+.vue-imgs-preview .bi-zoom-next .icon-turn-prev {
+  margin-top: -5px;
+  background-image: url("../assets/imgPre-right.svg");
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+.vue-imgs-preview .bi-zoom-prev i,
+.vue-imgs-preview .bi-zoom-next i {
+  width: 30px;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 auto;
+  font-size: 26px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+}
+.vue-imgs-preview .bi-zoom-next {
+  right: 0;
+}
+.vue-imgs-preview .bi-zoom-prev {
+  left: 0;
+}

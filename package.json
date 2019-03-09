@@ -1,0 +1,56 @@
+{
+  "name": "vue-imgs-preview",
+  "version": "0.1.9",
+  "description": "图片查看工具,支持放大、下载、旋转、拖拽等",
+  "author": "MaleWeb",
+  "main": "dist/vueImgsPreview.common.js",
+  "unpkg": "dist/vueImgsPreview.umd.min.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vueImgsPreview  ./src/lib/index.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "vue": "^2.6.6",
+    "vue-images-preview": "^1.0.0",
+    "vue-imgs-preview": "^0.1.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {}
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
