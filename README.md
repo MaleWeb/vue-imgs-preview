@@ -1,7 +1,15 @@
+
+<p align="center">
+  <a href="https://maleweb.github.io/#/">
+    <img alt="Male" src="https://uufe-web.oss-cn-beijing.aliyuncs.com/PicLib/test/M_1552115150755.png" width="140">
+  </a>
+</p>
+<p align="center">前端之路,不虚此行</p>
 [![npm](https://img.shields.io/badge/npm-0.1.9-brightgreen.svg)](https://www.npmjs.com/package/vue-imgs-preview)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)  
 `花了一天的时间,抽离了一个业务中的组件。写的不好,请多指教`  
-# Vue-imgs-preview 0.x   
+# VueImgsPreview
+基于vue-cli3的图片预览插件
 ## 预览  
 
 ![](https://uufe-web.oss-cn-beijing.aliyuncs.com/PicLib/test/vue-img-preview_1552041613508.gif)  
